@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=SudokuInputReader
+comment0.text=\r\n\ This\ class\ handles\ user\ input\ for\ a\ Sudoku\ game.\r\n
+comment1.params=
+comment1.target=SudokuInputReader()
+comment1.text=\r\n\ Constructor\ of\ the\ SudokuInputReader\ class.\r\n
+comment2.params=
+comment2.target=void\ readInput()
+comment2.text=\r\n\ Reads\ user\ input\ for\ a\ Sudoku\ move\ or\ quit\ command.\r\n\ Method\ keeps\ prompting\ the\ user\ until\ valid\ input\ is\ received.\r\n
+comment3.params=
+comment3.target=boolean\ userWantsToQuit()
+comment3.text=\r\n\ Returns\ whether\ the\ user\ wants\ to\ quit\ the\ game.\r\n\ @return\ true\ if\ the\ user\ wants\ to\ quit,\ false\ otherwise\r\n
+comment4.params=
+comment4.target=boolean\ userWantsToSolve()
+comment4.text=\r\n\ Returns\ whether\ the\ user\ wants\ the\ computer\ to\ solve\ the\ puzzle.\r\n\ @return\ true\ if\ the\ user\ wants\ the\ computer\ to\ solve,\ false\ otherwise\r\n
+comment5.params=
+comment5.target=int\ getRowInput()
+comment5.text=\r\n\ Returns\ the\ row\ input\ from\ the\ user.\r\n\ @return\ the\ row\ input\ (0-8)\r\n
+comment6.params=
+comment6.target=int\ getColInput()
+comment6.text=\r\n\ Returns\ the\ column\ input\ from\ the\ user.\r\n\ @return\ the\ column\ input\ (0-8)\r\n
+comment7.params=
+comment7.target=int\ getValueInput()
+comment7.text=\r\n\ Returns\ the\ value\ input\ from\ the\ user.\r\n\ @return\ the\ value\ input\ (1-9)\r\n
+numComments=8
