@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=Collection_ArrayList
-comment1.params=
-comment1.target=Collection_ArrayList()
-comment2.params=
-comment2.target=void\ test_method_in_ArrayList()
-comment2.text=\r\n\ in\ ArrayList\ we\ have\ method\:\r\n\ jason_list.add(name);\ \ \ \ \ \ \ \ \ \ \ \ add\ a\ new\ element\ in\ the\ ArrayList\r\n\ jason_list.size();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Return\ the\ number\ of\ elements\r\n\ jason_list.get(index);\ \ \ \ \ \ \ \ \ \ \ get\ the\ element\ that\ has\ index\ 'index'\r\n\ \r\n
-numComments=3

@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=SomeMethodInStringClass
-comment1.params=
-comment1.target=SomeMethodInStringClass()
-comment2.params=
-comment2.target=void\ Print_the_people_name_starts_with_P()
-comment2.text=\r\n\ in\ String\ class\ we\ have\ many\ good\ method\r\n\ \r\n\ 1.startsWith(\ String\ prefix\ )\r\n\ 2.contains\r\n\ 3.indexOf\r\n\ 4.substring\r\n\ 5.trim\r\n\ 6.Beware\:string\ are\ immutable\r\n
-numComments=3
