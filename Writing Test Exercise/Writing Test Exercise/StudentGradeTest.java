@@ -38,5 +38,11 @@ public class StudentGradeTest
         String result3 = list.getGrade(75);
         String result4 = list.getGrade(65);
         String result5 = list.getGrade(55);
+        //Asssert
+        assertEquals("A" , result1);
+        assertEquals("B" , result2);
+        assertEquals("C" , result3);
+        assertEquals("D" , result4);
+        assertEquals("F" , result5);
     }
 }

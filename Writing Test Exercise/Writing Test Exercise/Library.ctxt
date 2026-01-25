@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Library
+comment1.params=initialBooks
+comment1.target=Library(int)
+comment2.params=
+comment2.target=void\ borrowBook()
+comment3.params=
+comment3.target=void\ returnBook()
+comment4.params=
+comment4.target=int\ getAvailableBooks()
+numComments=5
