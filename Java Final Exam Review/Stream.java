@@ -19,6 +19,9 @@ public class Stream{
     public void filter_GreaterOrEqual_3(){
         number_list.stream().filter( n -> (n >= 3) ).forEach( n -> System.out.println(n));
         /*
+         * 
+         * Stream are often created from the contents of a collection.
+         * 
          * number_list.stream()   is create a stream
          * number_list.stream().filter( n -> (n >= 3) ) is to do a filter
          * number_list.stream().filter( n -> (n >= 3) ).forEach( n -> System.out.println(n)); is printing all the elements after filter
