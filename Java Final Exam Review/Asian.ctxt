@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Asian
-comment1.params=name
-comment1.target=Asian(java.lang.String)
-comment2.params=
-comment2.target=void\ move()
-comment3.params=
-comment3.target=void\ take()
-numComments=4

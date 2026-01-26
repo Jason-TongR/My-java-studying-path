@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=TemperatureConverterTest
+comment0.text=\r\n\ The\ test\ class\ TemperatureConverterTest.\r\n\r\n\ @author\ \ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ celsiusToFahrenheit_Test()
+numComments=2

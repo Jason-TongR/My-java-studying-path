@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=StudentGrade
+comment1.params=score
+comment1.target=boolean\ isPassing(int)
+comment2.params=score
+comment2.target=java.lang.String\ getGrade(int)
+numComments=3

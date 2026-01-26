@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=Example_Interface_One
-comment1.params=
-comment1.target=void\ method_one()
-comment1.text=\r\n\ \ in\ interface\ ,\ only\ abstract\ method\ is\ allowed.\ But\ it\ should\ be\ completed\ in\ the\ subclass\!\r\n
-comment2.params=
-comment2.target=int\ method_two()
-numComments=3
