@@ -1,2 +1,2 @@
 # My-java-studying-path
-Studying java
+This repository is to recognized the contents that i studied in jAVA
