@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=StringUtilsTest
+comment0.text=\r\n\ The\ test\ class\ StringUtilsTest.\r\n\r\n\ @author\ \ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=StringUtilsTest()
+comment2.params=
+comment2.target=void\ reverse_Test()
+comment3.params=
+comment3.target=void\ isPalindrome_Test()
+comment4.params=
+comment4.target=void\ countVowels_Test()
+numComments=5
