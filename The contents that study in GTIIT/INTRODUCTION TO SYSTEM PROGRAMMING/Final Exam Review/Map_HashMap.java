@@ -12,6 +12,14 @@ public class Map_HashMap{
         jason_hashmap.put("Bob","654321");
         /*
          * in HashMap ,instead of .add() ,we use .put( , ) to add things
+         * 
+         * get();   get value from key
+         * containsKey(i);   wether exits key i.
+         * contiansValue(j); wethet exits value j.
+         * size();
+         * remove(key)  remove the (key,value) through key
+         * remove(key,value) remove the (key,value)
+         * 
          */
     }
     
