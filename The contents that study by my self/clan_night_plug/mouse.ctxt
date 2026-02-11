@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=mouse
+comment1.params=
+comment1.target=mouse()
+comment2.params=x\ y
+comment2.target=void\ move_mouse(int,\ int)
+comment3.params=
+comment3.target=void\ mouse_press()
+comment4.params=
+comment4.target=void\ mouse_release()
+numComments=5

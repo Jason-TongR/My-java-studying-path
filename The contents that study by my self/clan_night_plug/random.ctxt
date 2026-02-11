@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=random
+comment1.params=
+comment1.target=random()
+comment2.params=
+comment2.target=double\ generate_random_number()
+comment3.params=
+comment3.target=double\ generate_random_number_between_zeroPointTwo_zeroPointFive()
+numComments=4
