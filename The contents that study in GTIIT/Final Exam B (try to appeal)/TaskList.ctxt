@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=TaskList
+comment0.text=\r\n\ This\ class\ represents\ a\ list\ of\ tasks,\ where\ each\ task\ has\ a\ title\ ,\ assignee,\r\n\ completion\ status,\ ect.\r\n
+comment1.params=name
+comment1.target=TaskList(java.lang.String)
+comment2.params=task
+comment2.target=void\ addTask(Task)
+comment2.text=\ \r\n\ adds\ a\ task\ to\ this\ task\ list.\r\n\ Precondition\:\ task\ is\ not\ null,\ is\ not\ in\ the\ taskk\ list,\ and\ is\ not\ completed.\r\n
+comment3.params=task
+comment3.target=void\ marktaskCompleted(Task)
+comment3.text=\r\n\ marks\ a\ task\ in\ this\ task\ list\ as\ completed.\r\n\ Precondition\:\ task\ is\ not\ null\ ,\ is\ in\ the\ task\ list\ ,\ and\ is\ not\ completed.\r\n
+comment4.params=origAssignee\ newAssignee
+comment4.target=void\ reassignTasks(java.lang.String,\ java.lang.String)
+comment4.text=\r\n\ [EXERCISE\ 2]\r\n\ TO\ DO\:\r\n\ Reassigns\ all\ non-completed\ tasks\ assigned\ to\ origAssignee\ to\ newAssignee.\r\n\ @param\ origAssignee\ the\ orignial\ assignee\ whose\ tasks\ are\ to\ be\ reassigned\r\n\ @param\ newAssignee\ the\ new\ assignee\ to\ whom\ the\ tasks\ will\ be\ reassigned\r\n\ Preconditon\:origAssignee\ and\ newAssignee\ are\ not\ null\ or\ empty,\r\n\ and\ origAssignee\ is\ not\ the\ same\ as\ newAssignee.\r\n
+numComments=5

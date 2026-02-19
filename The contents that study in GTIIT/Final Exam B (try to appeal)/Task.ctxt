@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Task
+comment0.text=\r\n\ Class\ that\ represents\ a\ task\ in\ a\ task\ management\ system.\ Each\ task\ has\ a\ title,\r\n\ assignee,priority\ level\ ,\ estimated\ hours\ to\ complete,\ and\ completion\ status.\r\n
+comment1.params=title\ assignee\ estimatedHours
+comment1.target=Task(java.lang.String,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getTitle()
+comment3.params=
+comment3.target=java.lang.String\ getAssignee()
+comment4.params=
+comment4.target=int\ getPriority()
+comment5.params=
+comment5.target=int\ getEstimatedHours()
+comment6.params=
+comment6.target=boolean\ isCompleted()
+comment7.params=
+comment7.target=void\ markCompleted()
+comment8.params=priority
+comment8.target=void\ setPriority(int)
+numComments=9
