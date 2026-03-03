@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Exercise_Two
+comment1.params=n
+comment1.target=boolean\ isPrime(int)
+comment1.text=\r\n\ write\ a\ program\:\r\n\ boolean\ isPrime(int\ n){...}\r\n\ which\ must\ be\ correct\ with\ repect\ to\ the\ following\ contract\:\r\n\ \ \ \ \ \ 1.Precondition\:\ n\ is\ an\ integer.(Note\ \:\ it\ might\ be\ negative)\r\n\ \ \ \ \ \ 2.Postcondition\:\ the\ output\ is\ true\ if\ and\ only\ if\ n\ is\ prime.\r\n
+numComments=2
