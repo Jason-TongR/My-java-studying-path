@@ -1,3 +1,5 @@
+package Exercise2;
+
 public class Exercise_Two{
     
     
@@ -12,15 +14,21 @@ public class Exercise_Two{
         //precondition is hold because of the parmameter type
         
         //Postcondition
-        
-        boolean isPrime = true;
-        
+                
+        return distinguish_prime( n );
+    }
+    
+    
+    /**
+     * this method is to distinguish wethear the int n is prime number.
+     */
+    private boolean distinguish_prime( int n ){
         for(int i = 2 ; i < n ; i++){
             if( n % i == 0 ){
-                isPrime = false;
+                return false;
             }
         }
         
-        return isPrime;
+        return true;
     }
 }

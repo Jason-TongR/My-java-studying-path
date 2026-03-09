@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Exercise_Three
+comment0.text=\r\n\ still\ need\ to\ do.\r\n
+comment1.params=a
+comment1.target=java.util.ArrayList\ insertionSort(java.util.ArrayList)
+comment1.text=\r\n\ write\ a\ program\:\r\n\ ArrayList<Integer>\ insertionSort(ArrayList<Integer>\ a){...}\r\n\ which\ must\ be\ correct\ with\ respect\ to\ the\ following\ contract\:\r\n\ \ \ \ \ \ 1.Precondition\:\ a\ is\ an\ array\ of\ n\ integers.\r\n\ \ \ \ \ \ 2.Postcondition\:\ the\ output\ is\ an\ array\ s\ of\ n\ integers\ ,\ which\ is\ a\ sorted\ permutation\ of\ a.\r\n\ \ \ \ \ \ \r\n\ Use\ the\ following\ algorithm\:\r\n\ \ \ \ \ \ 1.Start\ with\ an\ empty\ array\ s.\r\n\ \ \ \ \ \ 2.For\ each\ index\ 0\ <\=\ i\ <\ n\ ,\ insert\ a[i]\ in\ the\ right\ position\ in\ s\ ,\ so\ that\ s\ is\ always\ sorted.\r\n
+comment2.params=a
+comment2.target=boolean\ distinguish_integer_array(java.util.ArrayList)
+comment2.text=\r\n\ this\ method\ is\ to\ distinguish\ wethear\ the\ given\ array\ is\ an\ integer\ array\r\n
+comment3.params=a
+comment3.target=java.util.ArrayList\ sort_array(java.util.ArrayList)
+comment3.text=\r\n\ this\ method\ is\ to\ sort\ the\ given\ Integer\ Array\ a\ .\r\n
+comment4.params=a
+comment4.target=int\ max_number_index(java.util.ArrayList)
+comment4.text=\r\n\ this\ method\ is\ to\ find\ (one)\ the\ maximum\ number\ index\ in\ the\ given\ Integer\ array\ a\r\n
+numComments=5

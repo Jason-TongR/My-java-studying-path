@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Exercise_One
+comment1.params=n
+comment1.target=int\ squareRoot(int)
+comment1.text=\r\n\ Write\ a\ program\:\r\n\ int\ square\ Root(int\ n){...}\r\n\ which\ must\ be\ correct\ with\ respect\ to\ the\ following\ contract\:\r\n\ \ \ \ \ \ 1.Precondition\ \ \:\ n\ >\=\ 0\ and\ there\ exists\ an\ integer\ r\ such\ that\ \ r\ *\ r\ \=\ n\r\n\ \ \ \ \ \ 2.Postcondition\ \:\ the\ output\ is\ the\ (unique)\ integer\ r\ such\ that\ r\ *\ r\ \=\ n\r\n
+comment2.params=n
+comment2.target=boolean\ distinguish_exist(int)
+comment2.text=\r\n\ this\ meathod\ is\ to\ distinguish\ for\ int\ n\ ,\ whether\ there\ exist\ a\ root\ for\ it.\r\n
+comment3.params=n
+comment3.target=boolean\ distinguish_uniquness(int)
+comment3.text=\r\n\ this\ method\ is\ to\ distinguish\ the\ uniquenss\ of\ the\ root.\r\n
+comment4.params=n
+comment4.target=int\ find_one_root(int)
+comment4.text=\r\n\ this\ method\ is\ to\ find\ one\ root\ of\ the\ int\ n.\r\n
+numComments=5
