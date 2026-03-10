@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Exercise4
+comment1.params=n
+comment1.target=int\ factorial(int)
+comment1.text=\r\n\ Consider\ the\ following\ program\:\r\n\ \r\n\ Using\ the\ loop\ invariant\ theorem,\ prove\ that\ it\ is\ correct\ with\ respect\ to\ the\ following\ contract\:\r\n\ \ \ \u2022\ Precondition\:\ the\ input\ is\ an\ integer\ n\ >\=\ 1.\r\n\ \ \ \u2022\ Postcondition\:\ the\ output\ fact\ is\ the\ factorial\ of\ n.\r\n
+numComments=2
