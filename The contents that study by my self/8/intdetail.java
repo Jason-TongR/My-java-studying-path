@@ -10,5 +10,7 @@ public class intdetail{
 		 * short  =  16bit	2byte
 		 * int    =  32bit    	4byte	(always)
 		 * long   =  64bit	8byte
+		 */
+		 
 	}
 }
