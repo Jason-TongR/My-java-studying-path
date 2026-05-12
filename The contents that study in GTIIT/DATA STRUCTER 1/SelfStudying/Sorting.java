@@ -177,7 +177,7 @@ public class Sorting{
                 3.For each x from 0 to k-1,generate in the output x as many times as indicated by C[x] 
                     (对于每个x从0到k-1，根据C[x]的值在输出中生成x的相应次数)
         */
-
+        return null;
     }
 
 }
