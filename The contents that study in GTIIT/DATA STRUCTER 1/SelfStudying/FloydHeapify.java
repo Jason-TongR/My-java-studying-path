@@ -1,4 +1,4 @@
-public class FloyHeapify{
+public class FloydHeapify{
     /*
         the cost of building a heap with n element is O(nlogn). (插入+上滤)
         we can do it more efficiently with the Heapify Algorithm
