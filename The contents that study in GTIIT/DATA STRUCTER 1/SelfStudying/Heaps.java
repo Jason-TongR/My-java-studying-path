@@ -84,9 +84,6 @@ public class Heaps{
 /*
     没有用，只是为了不报错
 */
-public class Note{
+class Note{}
 
-}
-public class heap{
-
-}
+class heap{}
