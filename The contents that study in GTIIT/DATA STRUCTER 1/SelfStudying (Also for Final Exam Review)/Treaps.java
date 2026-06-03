@@ -29,10 +29,26 @@ public class Treaps {
             To insert a key K :
                 1.Randomly choose a priority P for K (为 K 随机选择一个优先级 P)
                 2.Insert K : P as in a binary search tree.(The result may not have the heap invariant for priorities) (像在二叉搜索树中一样插入 K : P（结果可能不满足优先级的堆不变式）)
-                3
-        
-        
-        
+                3.While the priority is greater than the parent's priority :
+                    Rotate the current node with the parent 
+                        If the node is the right child , perform a left rotation
+                        If the node is the left child , perform a right rotation
+        */
+    }
+
+
+
+
+    private void DeletionAlgorithm(){
+        /*
+            To delete a key K :
+                1. Find the key with the usual binary search tree search algorithm (使用常规的二叉搜索树搜索算法找到键)
+                2. While the key is not a leaf :
+                    Rotate the current node with the child of highest priority
+                        If the left child has higher priority , perform a right rotation
+                        If the right child has higher priority , perform a left rotation
+                3. Remove the leaf node (删除叶节点)
+
         */
     }
 
