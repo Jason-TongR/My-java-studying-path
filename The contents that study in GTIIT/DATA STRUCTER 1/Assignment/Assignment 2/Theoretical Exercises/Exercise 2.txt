@@ -1,0 +1,111 @@
+Exercise 2 : Multi-way sorting
+
+
+
+(a)
+    The Worst case time complexity of this algorithm is O(m*(n)^2).
+
+    proof :
+        
+        
+        the structure of the algorithm is like this : (just pseudo code):
+        
+        According to the proposed algorithm, B is initially initialized to A[0], so its starting length is m.
+
+        public ArrayList<Integer> ThisAlgorithm(){
+
+            for ( int i = 1 ; i < n ; i++ ){
+                
+                B = MERGE(B, A[i])      // Merge B and A[i]
+                                        // Update B equal to the previous one
+            
+            }
+
+            return B;
+
+        }
+
+
+
+        Since Merge( M1 , M2 ) will takes O( |M1| + |M2| )
+         
+        So , This algorithm will takes O( (m+m) + (2m+m) + (3m+m) + ... + ((n-1)m+m) ) 
+                                     = O(2m + 3m + 4m + ... + nm)
+                                     = O( m * (2 + 3 + 4 + ... + n) )
+                                     = O( nm + m*(n)^2) = O( (n+n^2)m ) = O(m*n^2)
+           
+        Therefore , the time complexity of this algorithm is O(m*(n)^2).  (actually , for this time algorithm , Best time complexity = Worst time complexity)
+        
+        Q.E.D.
+
+
+
+        =============================================================================================================================================================
+
+
+
+(b)
+    We will use heap to optimize our algorithm.
+
+    By hypothesis , we have that :
+        A[0] is sorted increasingly
+        A[1] is sorted increasingly
+        ...
+        A[n-1] is sorted increasingly
+
+    Our idea is :
+        we will make a Min-Heap of maximum size n .
+
+            Crucially, to remember which array an element came from,
+
+            the elements in the heap must be objects storing three values:(value, arrayIndex, elementIndex).
+
+            The heap will be ordered by the value.
+        
+        since in the heap , delete takes O(log n) times , insertion take O(log n) times 
+         
+        so in this heap , we will delete the top element(that is the smallest element in the heap) and put it into our result array , then insert the next element in some A[i],
+
+        since we have total nm elements,
+
+        Therefore , the time complexity of this algorithm is O(mn*log n).
+
+
+    Our pseudo code : 
+
+        public ArrayList<Integer> OptimizeAlgorithm(){
+            
+            MinHeap Heap = new MinHeap();
+            for (int i = 0; i < n; i++) {
+
+                Heap.insert( (A[i][0], i, 0) ); // Insert: (value, arrayIndex, elementIndex)
+
+            }
+
+            // This step takes O(n) times.
+            
+            ArrayList<Integer> ResultArray = new ArrayList<>();
+
+            while ( !Heap.isEmpty() ) {
+
+                Tuple minItem = Heap.extractMin();  // Pop the smallest tuple
+            
+                ResultArray.add(minItem.value);
+
+                // Now we use the saved indexes to find the exact next element!
+                if (minItem.elementIndex + 1 < m) {
+
+                    int nextVal = A[minItem.arrayIndex][minItem.elementIndex + 1];
+
+                    Heap.insert( (nextVal, minItem.arrayIndex, minItem.elementIndex + 1) );
+
+                }
+            }
+            return ResultArray;
+        }
+
+
+
+        Therefore , followed by the optimize algorithm , the time complexity is O(mn*log n).
+
+

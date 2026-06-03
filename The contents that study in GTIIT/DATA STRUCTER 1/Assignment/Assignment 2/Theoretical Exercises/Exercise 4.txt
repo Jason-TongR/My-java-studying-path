@@ -1,0 +1,148 @@
+Exercise 4: A data structure for ranking players
+
+    Our idea is :
+        We will use AVL tree to solve this problem.
+
+        The node of the tree has three variables:
+            int score : the score of this game
+            int count : how many players have this score at this moment
+            int total : the sum of the nodes of the subtree of this node
+        
+        We will also use an array score[n] to remember the score of each players.
+
+
+
+
+        For example , suppose we have 6 players , now they all have 0 points.
+            so , now :
+                our AVL tree is like this :
+                                [score:0 , count:6 , total:6]
+
+                our array score[6] is like this :
+                                [0 , 0 , 0 , 0 , 0 , 0]
+
+            now , we add 1 point to players zero , then :
+                our AVL tree is like this :
+
+                                [score:0 , count:5 , total:6]
+                                                \
+                                                 \
+                                                  \
+                                         [score:1 , count:1 , total:1]
+
+
+                our array score[6] is like this:
+                                [1 , 0 , 0 , 0 , 0 , 0]
+
+
+
+
+    Our pesudo code is :
+
+
+        class Node<Integer>{
+            int score;
+            int count;
+            int total;
+            Node<Integer> left = null;
+            Node<Integer> right = null;
+        }
+
+
+
+        public class Ranking( int n ){
+            
+            Node<Integer> root;     //our AVL tree
+
+            int score[n];           //our array score[n]
+
+
+
+            public Ranking(){
+
+                //initialize the array score[n]
+                for(int i = 0 ; i < n ; i++){
+                    score[i] = 0;           
+                }
+
+
+                //initialize the AVL tree
+                root.score = 0;
+                root.count = n;
+                root.total = n;
+
+            }
+
+
+
+            void score(int i){
+
+                assert (i >= 0 && i < n) : "Precondition";
+            
+
+
+                //update the AVL tree
+
+                in AVL tree , we search the node "Node" that have score score[i] , this step take O(log n) in AVL tree
+                
+                Node.count--; (if count go to zero , then delete this node)
+
+                if(Node.count == 0){
+                    delete(Node);
+                    and do update rotation operation for AVL tree;
+                }
+                else{
+                    update total upward(Node).          //total-- for all parent of Node
+                }
+
+
+                now , we seach the node "Next" that have score （ score[i] + 1  ）, this step also take O(log n) time
+
+                if(next != null){
+                    next.count++;
+                    update total upward(Next);          //total++ for all parent of Next
+                }
+
+                else{
+                    inset the node "Next"
+                }
+
+
+
+
+                //update the array score[n]
+
+                score[i]++;
+
+
+            }
+
+
+
+            int ranking(int i){
+
+                assert (i >= 0 && i < n) : "Precondition";
+
+                in AVL tree , we search the node "Node" that have score[i]  (that is the player i 's score) , this step take O(log n) in AVL tree
+                During the O(log n) search path for score[i], we maintain a sum 'k' (initially 0) to count all players with strictly greater scores.
+                    At each step of the search from the root:
+                    - If target score > current node's score: we go RIGHT, do nothing to k.
+                    - If target score < current node's score: we go LEFT. 
+                    Since all players in the right subtree and the current node have higher scores, 
+                    we update: k = k + current.count + current.right.total.
+
+                When we finally find the "Node" with score[i], the final ranking is:
+                return k + Node.count + Node.right.total;
+
+            }
+        }
+
+
+        COMMENT :  1. In the void score(int i) , update the array score[n] just take O(1) time
+                                                 update the AVL tree take O(log n) time in the worst case
+                                                 rotation operation take O(log n) time (we do it for all parent of Node)
+                     
+                      So the total time complexity in the Worst case is O(log n).
+                    
+                    
+                   2. In the int ranking(int i) , similary it takes O(log n) in the worst case.
