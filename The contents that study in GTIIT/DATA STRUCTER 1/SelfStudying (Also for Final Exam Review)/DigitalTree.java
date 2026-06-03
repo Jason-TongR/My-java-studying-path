@@ -59,7 +59,47 @@ public class DigitalTree{
     }
 
 
+
+     private void SearchAlgorithm(){
+        /*
+            To search for a key a0,...,am-1 in a trie :
+            
+            1. Start at the root of the trie (从根节点开始)
+
+            2. For each i from 0 to m-1 :
+                Go down to the child corresponding to ai (根据当前字符 ai 选择对应的子节点)
+                If the child does not exist, the key is not present (如果子节点不存在，说明这个 key 不存在)
+
+            3. If the node is marked as a key, return the value stored in the node; otherwise, return null (如果节点被标记为一个 key，返回存储在该节点的 value；否则返回 null)
+        
+        */
+    }
+
+
+
+    private void DeletionAlgorithm(){
+        /*
+            To delete a key a0,...,am-1 from a trie :
+            
+            1. Start at the root of the trie (从根节点开始)
+
+            2. For each i from 0 to m-1 :
+                Go down to the child corresponding to ai (根据当前字符 ai 选择对应的子节点)
+                If the child does not exist, the key is not present, so do nothing (如果子节点不存在，说明这个 key 不存在，所以不做任何操作)
+
+            3. If the node is marked as a key, unmark it and remove the value stored in the node (如果节点被标记为一个 key，取消标记并删除存储在该节点的 value)
+
+            4. To preserve the invariant that leaves are not empty.
+                - Build a stack of the nodes visited.
+                - While the current node is an empty leaf and not the root :
+                    - Modify the parent , deleting the corresponding child
+                    - Move to that parent 
+                    (为了保持叶子节点不空的 invariant，构建一个访问过的节点的栈。当当前节点是一个空叶子且不是根节点时，修改父节点，删除对应的子节点，并移动到父节点)
+        */
+    }
 }
+
+
 
 
 class TrieNode<V>{
