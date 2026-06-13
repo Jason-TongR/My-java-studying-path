@@ -58,7 +58,6 @@ public class Hash_and_HashTable {
                                 The analysis is similar to the geometric growth method for arrays.
                             
                             低了就缩，高了就扩, 以保持负载因子在一个合理的范围内。
-
             
             2. Open addressing :
                 Each bucket may be empty or contain a single key-value pair.
@@ -78,7 +77,7 @@ public class Hash_and_HashTable {
 
 
         Designing hash functions :
-        
+
             An ideal hash function to implement a hash table:
                 Should be fast to compute.
 
