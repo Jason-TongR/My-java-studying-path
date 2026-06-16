@@ -7,7 +7,7 @@ public class Disjoint_Set_Data_Structure {
             (This is useful to work with partitions and equivalence relations)
         
 
-        We need the following operations:
+        We need the following operations :
             Make a new set with a single element.
             Merge two sets , replacing them by their union.
             Find the representative of the set of an element.
