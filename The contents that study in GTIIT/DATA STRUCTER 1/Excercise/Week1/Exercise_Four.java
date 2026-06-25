@@ -1,4 +1,4 @@
-public class Exercise4{
+public class Exercise_Four{
     
     
         /**
