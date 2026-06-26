@@ -12,7 +12,7 @@ public class Exercise_Six {
     ArrayList<Integer> reverse(ArrayList<Integer> a) {
         int n = a.size();
         int i = 0;
-        ArrayList<Integer> r = new ArrayList<>(a);  //（a） 表示复制 一份a数组
+        ArrayList<Integer> r = new ArrayList<>(a);  //（a） 表示复制一份a数组
 
         while (i < n / 2) {
             int temp = r.get(i);
@@ -28,7 +28,7 @@ public class Exercise_Six {
 
 /*
     proof :
-            Consider the following Inv := { 1. 0 <= i <= n/2 - 1        2. the terms before i are all commuted}
+            Consider the following Inv := { 1. 0 <= i <= n/2        2. the terms before i are all commuted }
             Suppose the old i called "i" , the new i called "i'" 
 
             Initialization :
@@ -47,8 +47,18 @@ public class Exercise_Six {
 
                 i' = i + 1 
 
-                Now cheak the Inv : 1. is true 2. the terms before i 
+                Now cheak the Inv : 1. is true 2. the terms before i are all commmuted by the Inv , then i' == i + 1 then the termms befor i' are all commuted.
+            
+
+                Therefore , Inv also holds after once loop.
 
 
-            Termination :
+            Termination : 
+                the loop will terminate because i is 1+1+1+1+...
+
+            
+            Conclusion : the Inv and !cond is true . 
+                         that is , i == n/2 and the terms before i are all commuted.
+                         that is , the arrary have been reversed.
+                         Q.E.D
 */
