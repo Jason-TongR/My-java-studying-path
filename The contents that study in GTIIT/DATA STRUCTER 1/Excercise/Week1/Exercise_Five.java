@@ -14,7 +14,7 @@ public class Exercise_Five{
         int i = 0;
         boolean sorted = true;
         while (i < n - 1) {
-            if (a[i] > a[i + 1]) {
+            if (a.get(i) > a.get(i+1)) {            //(a[i] > a[i+1])
             sorted = false;
             }
             i = i + 1;
