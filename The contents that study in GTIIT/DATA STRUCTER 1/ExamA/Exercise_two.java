@@ -1,6 +1,7 @@
 public class Exercise_two{
 
     /*
+        ["O" notation]
         Prove or disprove the following statement : for every f : N natural -> R >=1 such that
         f(n) in O(n) . we have that f(n^3) + 1 in O(n^3).
     */
