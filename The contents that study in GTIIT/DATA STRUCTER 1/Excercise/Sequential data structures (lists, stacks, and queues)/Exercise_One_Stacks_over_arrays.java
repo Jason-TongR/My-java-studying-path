@@ -33,7 +33,7 @@
 
     The representation invariant should include the following conditions:
         
-        1. this.size <= this.capacity所以 stack.add(element) 如果继续执行，会在超过 capacity 后继续扩容
+        1. this.size <= this.capacity
         
         2. this.elements.size() == this.size
         
@@ -48,8 +48,7 @@ public class Exercise_One_Stacks_over_arrays {
 
         ArrayList<T> stack;
 
-        int capacity;
-                
+        int capacity;        
 
         Stack(int capacity) {
 
