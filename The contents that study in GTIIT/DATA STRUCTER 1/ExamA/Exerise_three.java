@@ -48,6 +48,6 @@ public class Exerise_three {
                 the complete list a. In the i-th iteration of the outermost while-loop(for each 1<= i <= n) the innermost 
                 while loop will iterate ki times. But note that k1 + k2 +...+ kn = n because the innermost while loop will traverse
                 the full lisst b only once(never going back). So the total cose of while-loops is O(n).The overall worst-case time
-                complexity is O(nlogn).
+                complexity is O(nlogn).0
     */
 }
