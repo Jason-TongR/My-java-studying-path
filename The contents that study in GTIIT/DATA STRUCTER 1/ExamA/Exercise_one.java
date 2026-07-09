@@ -17,10 +17,13 @@ public class Exercise_one{
                 Inv := {0 <= i <= n && sum = sigma (j from 0 to i - 1) A[j] }
 
         Explain why Mr.X will fail , describing exactly what is the problem when using the loop invariant thm.
+    */
+
 
 
 
         
+    /*     
         ANSWER :
             The problem is that the body of the loop does not preserve the invariant .
             For example , suppose that at the start of an iteration we have i = 0 and n = 1 and A = [10] and sum = 0 ,
