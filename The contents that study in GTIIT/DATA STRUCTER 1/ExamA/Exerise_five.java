@@ -21,6 +21,7 @@ public class Exerise_five {
 
             The operations can be implemented as follows:
                 1. To initialize an empty set of strings , create an empty trie. This takes O(1) worst-case time.
+                
                 2. To add a string w , first reverse the stirng w obtaining a reversed stirng w^r . For example , 
                    if w = "hello" then w^r = "ohheh" . Then insert w^r in the trie.Increment the count value of each visited node in
                    the path from the root to the node for w^r.
